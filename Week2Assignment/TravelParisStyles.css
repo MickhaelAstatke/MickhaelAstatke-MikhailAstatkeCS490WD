@@ -1,59 +1,45 @@
-/* ---------- BODY ---------- */
+/* BODY */
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background: url('images/background.jpg') no-repeat center fixed;
+  background: url('background.jpg') no-repeat center fixed;
 }
 
-/* ---------- MAIN ---------- */
+/* MAIN PANEL */
 main {
   background-color: white;
   width: 50%;
   margin: auto;
 }
 
-/* ---------- HEADER ---------- */
+/* HEADER with logo top-right */
 header {
-  background: url('images/logo.png') no-repeat right;
+  background: url('logo.png') no-repeat right;
   text-align: center;
   color: white;
   padding: 20px;
 }
 
-/* ---------- NAV ---------- */
+/* NAV */
 nav {
   font-weight: bold;
   text-align: center;
 }
-
 nav a {
   text-decoration: none;
   color: #29485d;
   padding: 10px;
 }
+nav a:hover { color: #ff5733; }
 
-nav a:hover {
-  color: #ff5733;
-}
+/* HEADINGS */
+h1, h2, h3 { font-family: Georgia, "Times New Roman", serif; }
+h3 { color: #29485d; }
 
-/* ---------- HEADINGS ---------- */
-h1, h2, h3 {
-  font-family: Georgia, "Times New Roman", serif;
-}
+/* LISTS */
+ul { list-style-image: url('marker.gif'); }
+li { line-height: 1.5; }
 
-h3 {
-  color: #29485d;
-}
-
-/* ---------- LISTS ---------- */
-ul {
-  list-style-image: url('images/marker.gif');
-}
-
-li {
-  line-height: 1.5;
-}
-
-/* ---------- FOOTER ---------- */
+/* FOOTER (small white tag centered) */
 footer {
   font-size: 75%;
   font-style: italic;
@@ -65,13 +51,10 @@ footer {
   margin: auto;
 }
 
-/* ---------- SPAN.web ---------- */
-.web {
-  font-weight: bold;
-  color: red;
-}
+/* EMPHASIS */
+.web { font-weight: bold; color: red; }
 
-/* ---------- CONTACT SECTION ---------- */
+/* CONTACT STRIP */
 #contact {
   text-align: center;
   padding: 15px;
@@ -79,7 +62,7 @@ footer {
   background-color: #c7b2ae;
 }
 
-/* ---------- ATTRACTION IMAGES ---------- */
+/* ATTRACTION IMAGES */
 .attraction-image {
   max-width: 600px;
   display: block;
