@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Travel Guide - Top Attractions</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Top Attractions in Paris</h1>
+  </header>
+
+  <nav>
+    <a href="home.html">Home</a> | <a href="attractions.html">Top Attractions</a>
+  </nav>
+
+  <main>
+    <p>Coming soon…</p>
+  </main>
+
+  <footer>
+    2025 Travel Guide | All Rights Reserved
+    <br />
+    Background photo by Leonard Cotte on Unsplash
+  </footer>
+</body>
+</html>
