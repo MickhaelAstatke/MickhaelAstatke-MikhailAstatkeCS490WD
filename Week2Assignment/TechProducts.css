@@ -1,0 +1,88 @@
+/* Base */
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #1f2937; /* slate-800 */
+  background: #f8fafc; /* subtle gray */
+}
+
+/* Layout wrapper */
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem 1rem 3rem;
+}
+
+/* Header */
+header h1 {
+  margin: 0.5rem 0 1rem;
+  font-size: clamp(1.75rem, 2.5vw + 1rem, 3rem);
+}
+
+/* Nav */
+nav ul {
+  list-style: disc inside;
+  padding-left: 0;
+  margin: 0 0 1.25rem;
+}
+nav li { display: list-item; }
+nav a {
+  text-decoration: underline;
+  color: #1d4ed8;
+}
+nav a:hover,
+nav a:focus { text-decoration: none; }
+
+/* Hero */
+.hero {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+  align-items: center;
+  margin: 1.5rem 0 2rem;
+}
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+.hero-text h2 { margin: 0 0 0.25rem; }
+.hero-text p { margin: 0; }
+
+/* Features grid */
+.features {
+  display: grid;
+  gap: 1rem;
+}
+.feature {
+  padding: 0.75rem;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+}
+.feature img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+.feature h3 { margin: 0.25rem 0 0.25rem; }
+
+/* Footer */
+.footer {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e5e7eb;
+  font-size: 0.95rem;
+  color: #334155; /* slate-700 */
+}
+
+/* Responsive tweaks */
+@media (min-width: 700px) {
+  .hero { grid-template-columns: 1.1fr 1fr; }
+  .features { grid-template-columns: repeat(3, 1fr); }
+}
