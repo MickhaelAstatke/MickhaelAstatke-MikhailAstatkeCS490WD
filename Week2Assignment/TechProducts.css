@@ -1,59 +1,54 @@
-/* ============ Base ============ */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+/* ===== Base ===== */
+* { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;   /* sans-serif fallback */
+  font-family: Arial, Helvetica, sans-serif;
   background: #f4f4f4;
   text-align: center;
 }
 
-/* ============ Layout ============ */
+/* ===== Layout ===== */
 .wrapper {
   max-width: 70%;
   margin: 0 auto;
   padding: 20px;
 }
 
-/* ============ Nav ============ */
+/* ===== Header (title spacing like screenshot) ===== */
+header h1 { margin: 5px 0 10px; }
+
+/* ===== Nav bar ===== */
 nav ul {
   list-style: none;
   padding: 10px;
   background: #333;
 }
-
-nav ul li {
-  display: inline;
-  margin: 0 15px;
-}
-
+nav ul li { display: inline; margin: 0 15px; }
 nav a {
   color: #fff;
   text-decoration: none;
   font-size: 18px;
   letter-spacing: 1px;
 }
-
 nav a:hover { text-decoration: underline; }
-
 nav a:visited { color: lightgray; }
 
-/* ============ Hero ============ */
+/* ===== Hero ===== */
 .hero {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 40px;
   background: #e3e3e3;
+  border-radius: 10px;              /* <-- adds the rounded panel */
+  margin-top: 10px;
 }
 
 .hero img {
   width: 30%;
   margin-right: 20px;
   border-radius: 10px;
+  display: block;
 }
 
 .hero-text {
@@ -61,7 +56,7 @@ nav a:visited { color: lightgray; }
   text-align: left;
 }
 
-/* ============ Features ============ */
+/* ===== Features ===== */
 .features {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -73,13 +68,16 @@ nav a:visited { color: lightgray; }
   background: #ffffff;
   padding: 15px;
   border-radius: 10px;
+  text-align: center;               /* <-- centers headings & text */
 }
 
 .feature img {
   width: 40%;
+  display: block;                   /* <-- lets margin auto work */
+  margin: 0 auto 10px;              /* <-- centers images like screenshot */
 }
 
-/* ============ Footer ============ */
+/* ===== Footer ===== */
 .footer {
   margin-top: 20px;
   padding: 10px;
@@ -87,45 +85,23 @@ nav a:visited { color: lightgray; }
   color: #fff;
 }
 
-/* ============ Media ≤ 768px ============ */
+/* ===== Media ≤ 768px ===== */
 @media (max-width: 768px) {
-  .hero {
-    flex-direction: column;
-    text-align: center;
-  }
+  .hero { flex-direction: column; text-align: center; }
+  .hero img { width: 250px; margin: 0 0 15px 0; }
+  .hero-text { max-width: 100%; text-align: center; }
 
-  .hero img {
-    width: 250px;
-    margin: 0 0 15px 0;
-  }
-
-  .hero-text {
-    max-width: 100%;
-    text-align: center;
-  }
-
-  nav ul {
-    padding: 10px;
-    text-align: center;
-  }
-
-  nav ul li {
-    display: block;
-    margin: 10px 0;
-  }
+  nav ul { padding: 10px; text-align: center; }
+  nav ul li { display: block; margin: 10px 0; }
 }
 
-/* ============ Media ≤ 480px ============ */
+/* ===== Media ≤ 480px ===== */
 @media (max-width: 480px) {
   .wrapper { padding: 10px; }
-
   .hero img { width: 200px; }
-
   .features { grid-template-columns: 1fr; }
 
   nav ul { padding: 5px; }
-
   nav ul li { margin: 5px 0; }
-
   nav a { font-size: 16px; }
 }
