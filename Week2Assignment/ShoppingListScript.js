@@ -1,61 +1,31 @@
-// helpers
-const $ = (sel) => document.querySelector(sel);
+// #1) grab elements
+const input   = document.getElementById("itemInput");
+const addBtn  = document.getElementById("addBtn");
+const list    = document.getElementById("list");
+const clearBtn = document.getElementById("clearBtn");
+const counter = document.getElementById("counter");
 
-const input = $("#itemInput");
-const addBtn = $("#addBtn");
-const list = $("#list");
-const clearBtn = $("#clearBtn");
-const counter = $("#counter");
-
+// #2) update the items counter
 function updateCounter() {
-  const count = list.querySelectorAll(".item").length;
-  counter.textContent = `${count} ${count === 1 ? "item" : "items"}`;
+  const items = list.querySelectorAll("li");
+  counter.textContent = `${items.length} ${items.length === 1 ? "item" : "items"}`;
 }
 
-function addItem(name) {
-  if (!name || !name.trim()) return;
+// #3) add button handler
+addBtn.addEventListener("click", () => {
+  const text = input.value.trim();        // ignore extra spaces
+  if (!text) return;                      // ignore empty
+
   const li = document.createElement("li");
-  li.className = "item";
+  li.textContent = text;
 
-  const checkbox = document.createElement("input");
-  checkbox.type = "checkbox";
-  checkbox.addEventListener("change", () => {
-    li.classList.toggle("completed", checkbox.checked);
+  // toggle done state on list item click
+  li.addEventListener("click", () => {
+    li.classList.toggle("done");
   });
 
-  const span = document.createElement("span");
-  span.className = "name";
-  span.textContent = name.trim();
-
-  const rm = document.createElement("button");
-  rm.className = "remove";
-  rm.setAttribute("aria-label", `Remove ${name}`);
-  rm.textContent = "×";
-  rm.addEventListener("click", () => {
-    li.remove();
-    updateCounter();
-  });
-
-  li.append(checkbox, span, rm);
-  list.appendChild(li);
-  updateCounter();
-}
-
-function handleAdd() {
-  addItem(input.value);
-  input.value = "";
-  input.focus();
-}
-
-// events
-addBtn.addEventListener("click", handleAdd);
-input.addEventListener("keydown", (e) => {
-  if (e.key === "Enter") handleAdd();
-});
-clearBtn.addEventListener("click", () => {
-  list.innerHTML = "";
-  updateCounter();
-});
-
-// initialize
-updateCounter();
+  // delete button
+  const deleteBtn = document.createElement("button");
+  deleteBtn.textContent = "✖";
+  deleteBtn.addEventListener("click", (e) => {
+    e.stopPropagation();   // don’t toggle done wh
