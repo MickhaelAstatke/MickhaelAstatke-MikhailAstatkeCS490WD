@@ -1,4 +1,4 @@
-// === Dynamic Greeting Based on Time ===
+//   Dynamic Greeting Based on Time 
 (function setGreeting() {
     const greetingEl = document.getElementById('greeting');
     const hour = new Date().getHours();
@@ -18,7 +18,7 @@
 })();
 
 
-// === Auto Year in Footer ===
+//   Auto Year in Footer  
 (function setYear() {
     const yearEl = document.getElementById('year');
     const y = new Date().getFullYear();
@@ -28,14 +28,14 @@
 })();
 
 
-// === Dark Mode Toggle ===
+//   Dark Mode Toggle  
 // toggles a .light-theme class on <body> and remembers it
 (function initThemeToggle() {
     const toggleBtn = document.getElementById('themeToggle');
 
     // on load: check saved preference
     const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'light') {
+    if (savedTheme   'light') {
         document.body.classList.add('light-theme');
         if (toggleBtn) toggleBtn.textContent = '🌙';
     } else {
@@ -55,7 +55,7 @@
 })();
 
 
-// === Scroll To Top Button ===
+//   Scroll To Top Button  
 (function initScrollToTop() {
     const scrollBtn = document.getElementById('scrollTopBtn');
 
