@@ -1,11 +1,11 @@
-/* === RESET-ish === */
+/*   RESET-ish   */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* === THEME VARIABLES === */
+/*   THEME VARIABLES   */
 :root {
     --bg: #0f172a;
     --surface: #1e253a;
@@ -30,7 +30,7 @@ body.light-theme {
     --accent-hover: #0284c7;
 }
 
-/* === GLOBAL === */
+/*   GLOBAL   */
 body {
     background-color: var(--bg);
     color: var(--text-main);
@@ -59,7 +59,7 @@ body {
     margin-bottom: 2rem;
 }
 
-/* === HEADER / NAV === */
+/*   HEADER / NAV   */
 .site-header {
     background-color: var(--surface);
     border-bottom: 1px solid rgba(148, 163, 184, 0.15);
@@ -125,7 +125,7 @@ body {
     background: var(--accent-hover);
 }
 
-/* === HERO === */
+/*   HERO   */
 .hero {
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -175,7 +175,7 @@ body {
     padding: 0.6rem 0.8rem;
 }
 
-/* === PROJECTS === */
+/*   PROJECTS   */
 .projects-section {
     padding-top: 2rem;
     padding-bottom: 3rem;
@@ -231,7 +231,7 @@ body {
     margin-top: auto;
 }
 
-/* === CONTACT === */
+/*   CONTACT   */
 .contact-section {
     padding-top: 2rem;
     padding-bottom: 4rem;
@@ -271,7 +271,7 @@ body {
     text-decoration-thickness: 2px;
 }
 
-/* === FOOTER === */
+/*   FOOTER   */
 .site-footer {
     background-color: var(--surface);
     border-top: 1px solid rgba(148, 163, 184, 0.15);
@@ -310,8 +310,7 @@ body {
     color: #000;
 }
 
-/* === RESPONSIVE MEDIA QUERY === */
-/* tweak layout / font size for small screens */
+/*   RESPONSIVE MEDIA QUERY   */
 @media (max-width: 600px) {
     .header-inner {
         flex-direction: column;
