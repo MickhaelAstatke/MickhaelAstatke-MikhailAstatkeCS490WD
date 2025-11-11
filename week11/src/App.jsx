@@ -1,11 +1,11 @@
 import React from "react";
-import "./App.css";
+import "week11/src/App.css";
 
-import Header from "./components/Header";
-import FeaturedItem from "./components/FeaturedItem";
-import ItemList from "./components/ItemList";
-import FunFact from "./components/FunFact";
-import Footer from "./components/Footer";
+import Header from "week11/src/components/Header.jsx";
+import FeaturedItem from "week11/src/components/FeaturedItem";
+import ItemList from "week11/src/components/ItemList";
+import FunFact from "week11/src/components/FunFact";
+import Footer from "week11/src/components/Footer";
 
 function App() {
   return (
