@@ -1,0 +1,151 @@
+/* General layout */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  background-color: #f5f5f7;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.site-header {
+  background-color: #111827;
+  color: #f9fafb;
+  padding: 24px 40px;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo {
+  font-size: 32px;
+}
+
+.site-title {
+  margin: 0;
+  font-size: 28px;
+}
+
+.site-subtitle {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: #e5e7eb;
+}
+
+/* Sections */
+.main-content {
+  flex: 1;
+  padding: 24px 40px 40px;
+}
+
+.section {
+  margin-bottom: 32px;
+}
+
+.section-title {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+/* Featured card */
+.featured-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 16px 20px;
+  box-shadow: 0 2px 4px rgba(15, 23, 42, 0.08);
+}
+
+.featured-card h3 {
+  margin-top: 0;
+}
+
+.meta {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* Item cards */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.item-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 14px 16px;
+  border: 1px solid #e5e7eb;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.item-card-hovered {
+  transform: translateY(-3px);
+  border-color: #f97316;
+  box-shadow: 0 4px 10px rgba(15, 23, 42, 0.15);
+}
+
+.item-title {
+  margin: 0 0 4px;
+}
+
+.description {
+  font-size: 14px;
+  margin: 6px 0 10px;
+}
+
+.rating {
+  font-weight: 600;
+}
+
+/* Fun fact */
+.fun-fact {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.btn {
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: none;
+  background-color: #111827;
+  color: #f9fafb;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.fun-fact-text {
+  background-color: #ffffff;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  font-size: 14px;
+}
+
+/* Footer */
+.site-footer {
+  background-color: #111827;
+  color: #e5e7eb;
+  text-align: center;
+  padding: 14px 8px;
+  font-size: 13px;
+}
