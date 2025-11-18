@@ -1,203 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mickhael Astatke | Web Dev Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mickhael Astatke | Professional Portfolio</title>
 
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.gstatic.com"> 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
-        rel="stylesheet"
-    >
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     <!-- External CSS -->
-    <link rel="stylesheet" href="midterm/style.css" />
+    <link rel="stylesheet" href="final/style.css">
 </head>
 <body>
-    <!--  HEADER / NAV   -->
+    <!-- HEADER / NAVIGATION -->
     <header class="site-header">
-        <div class="container header-inner">
-            <div class="branding">
-                <h1 class="logo">Mickhael Astatke</h1>
-                <p class="tagline"><span id="greeting"></span> I build clean, useful web things.</p>
-            </div>
-
-            <nav class="site-nav">
-                <ul>
+        <div class="container">
+            <nav class="main-nav">
+                <div class="logo">
+                    <h1>Mickhael Astatke</h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li>
-                        <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
-                            🌙
-                        </button>
-                    </li>
+                    <li><a href="final/resume.pdf" target="_blank" class="resume-link">Resume</a></li>
                 </ul>
             </nav>
         </div>
-    </header> 
+    </header>
+
     <main>
-        <!--   HERO / INTRO   -->
-        <section class="hero container">
-            <div class="hero-text">
-                <h2>Front-End / Full-Stack Student Developer</h2>
-                <p>
-                    I'm a software engineering student working in HTML, CSS, and JS.
-                    Below are some of my course projects. This page is my live portfolio.
+        <!-- HERO SECTION WITH PROFESSIONAL BIO -->
+        <section id="about" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h2 class="hero-title">Hello, I'm Mickhael Astatke</h2>
+                        <p class="hero-subtitle">Software Engineering Student & Web Developer</p>
+                        <p class="bio">
+                            I'm a passionate software engineering student with a strong foundation in web development
+                            and a drive to create impactful digital experiences. With expertise in HTML, CSS, JavaScript,
+                            and React, I focus on building clean, user-friendly applications that solve real-world problems.
+                        </p>
+                        <p class="bio">
+                            Throughout my academic journey, I've developed a diverse portfolio of projects ranging from
+                            responsive websites to interactive web applications. I'm constantly learning new technologies
+                            and best practices to stay current in this ever-evolving field.
+                        </p>
+                        <div class="cta-buttons">
+                            <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                            <a href="#projects" class="btn btn-secondary">View My Work</a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="final/profile.jpg" alt="Mickhael Astatke - Professional Photo">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EDUCATION SECTION -->
+        <section id="education" class="education-section">
+            <div class="container">
+                <h2 class="section-title">Education</h2>
+                <div class="education-content">
+                    <div class="education-card">
+                        <h3 class="degree-title">Bachelor of Science in Software Engineering</h3>
+                        <p class="institution">University Name</p>
+                        <p class="education-period">Expected Graduation: 2025</p>
+                        <p class="education-description">
+                            Comprehensive program focusing on software development, algorithms, data structures,
+                            and modern web technologies. Emphasis on practical application through hands-on projects
+                            and collaborative development.
+                        </p>
+                    </div>
+
+                    <div class="courses-section">
+                        <h3 class="courses-title">Relevant Coursework</h3>
+                        <div class="courses-grid">
+                            <div class="course-item">
+                                <h4>CS 490WD - Web Development</h4>
+                                <p>Comprehensive course covering HTML, CSS, JavaScript, responsive design, and modern web frameworks</p>
+                            </div>
+                            <div class="course-item">
+                                <h4>Data Structures & Algorithms</h4>
+                                <p>In-depth study of fundamental data structures, algorithm design, and complexity analysis</p>
+                            </div>
+                            <div class="course-item">
+                                <h4>Database Systems</h4>
+                                <p>Relational database design, SQL, NoSQL databases, and database management principles</p>
+                            </div>
+                            <div class="course-item">
+                                <h4>Software Engineering Principles</h4>
+                                <p>Software development lifecycle, design patterns, testing methodologies, and agile practices</p>
+                            </div>
+                            <div class="course-item">
+                                <h4>Computer Networks</h4>
+                                <p>Network protocols, web architecture, client-server models, and internet technologies</p>
+                            </div>
+                            <div class="course-item">
+                                <h4>Object-Oriented Programming</h4>
+                                <p>Advanced programming concepts, design patterns, and software architecture using modern languages</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-description">
+                    A showcase of my work in web development, demonstrating proficiency in various technologies
+                    and design principles.
                 </p>
-                <a class="btn primary-btn" href="#projects">See my work ↓</a>
+                <div class="projects-preview">
+                    <div class="project-highlight">
+                        <h3>View Complete Project Portfolio</h3>
+                        <p>
+                            Explore my full collection of web development projects including responsive layouts,
+                            interactive applications, and design showcases from CS 490WD and other coursework.
+                        </p>
+                        <a href="final/projects.html" class="btn btn-primary">View All Projects</a>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!--  == PROJECTS  == -->
-        <section id="projects" class="projects-section container">
-            <h2 class="section-title">Projects & Assignments</h2>
-            <p class="section-desc">
-                These are projects from CS 490WD. Each one includes a short description and a link.
-            </p>
-
-            <div class="projects-grid">
-                <!-- PROJECT CARD: Parks & Rec -->
-                <article class="project-card">
-                    <div class="project-content">
-                        <h3 class="project-title">Parks &amp; Rec Site</h3>
-                        <p class="project-desc">
-                            A responsive city Parks &amp; Rec info site with location cards and hours.
-                            Focus on layout, readability, and basic accessibility.
-                        </p>
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-description">
+                    I'm always open to discussing new opportunities, collaborations, or just connecting
+                    with fellow developers. Feel free to reach out!
+                </p>
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <div class="contact-icon">📧</div>
+                        <h3>Email</h3>
+                        <a href="mailto:Mickhaelastatke@gmail.com">Mickhaelastatke@gmail.com</a>
                     </div>
-                    <div class="project-links">
-                        <a class="btn small-btn"
-                           href="Week2Assignment/ParksAndRecHome.html"
-                           target="_blank" rel="noopener">
-                           View project
-                        </a>
+                    <div class="contact-card">
+                        <div class="contact-icon">💼</div>
+                        <h3>LinkedIn</h3>
+                        <a href="https://www.linkedin.com/in/your-linkedin-here" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a>
                     </div>
-                </article>
-
-                <!-- PROJECT CARD: Cozy Cafe -->
-                <article class="project-card">
-                    <div class="project-content">
-                        <h3 class="project-title">Cozy Café Landing Page</h3>
-                        <p class="project-desc">
-                            A café home page with menu highlights, hero banner, and
-                            call-to-action button. Built with Flexbox.
-                        </p>
+                    <div class="contact-card">
+                        <div class="contact-icon">💻</div>
+                        <h3>GitHub</h3>
+                        <a href="https://github.com/MickhaelAstatke" target="_blank" rel="noopener noreferrer">github.com/MickhaelAstatke</a>
                     </div>
-                    <div class="project-links">
-                        <a class="btn small-btn"
-                           href="Week2Assignment/CozyCafeHome.html"
-                           target="_blank" rel="noopener">
-                           View project
-                        </a>
-                    </div>
-                </article>
-
-                <!-- PROJECT CARD: Paris Travel Guide -->
-                <article class="project-card">
-                    <div class="project-content">
-                        <h3 class="project-title">Paris Travel Guide</h3>
-                        <p class="project-desc">
-                            A mini travel guide layout using CSS Grid, card components,
-                            and hover effects for landmarks / food / tips.
-                        </p>
-                    </div>
-                    <div class="project-links">
-                        <a class="btn small-btn"
-                           href="Week2Assignment/TravelParisHome.html"
-                           target="_blank" rel="noopener">
-                           View project
-                        </a>
-                    </div>
-                </article>
-
-                <!-- PROJECT CARD: Tech Showcase -->
-                <article class="project-card">
-                    <div class="project-content">
-                        <h3 class="project-title">Tech Product Showcase</h3>
-                        <p class="project-desc">
-                            Product cards with specs and pricing. Practiced semantic HTML,
-                            consistent spacing, and reusable card components.
-                        </p>
-                    </div>
-                    <div class="project-links">
-                        <a class="btn small-btn"
-                           href="Week2Assignment/TechProductsHome.html"
-                           target="_blank" rel="noopener">
-                           View project
-                        </a>
-                    </div>
-                </article>
-
-                <!-- PROJECT CARD: Shopping List -->
-                <article class="project-card">
-                    <div class="project-content">
-                        <h3 class="project-title">Shopping List App</h3>
-                        <p class="project-desc">
-                            Simple interactive list to track items.
-                            Focus on basic JS logic and DOM updates.
-                        </p>
-                    </div>
-                    <div class="project-links">
-                        <a class="btn small-btn"
-                           href="Week2Assignment/ShoppingListHome.html"
-                           target="_blank" rel="noopener">
-                           View project
-                        </a>
-                    </div>
-                </article>
-
-
-                <article class="project-card">
-                    <div class="project-content">
-                        <h3 class="project-title">Movie Gallery Showcase</h3>
-                        <p class="project-desc">
-                         TEST
-                        </p>
-                    </div>
-                    <div class="project-links">
-                        <a class="btn small-btn"
-                           href="week11/src/App.jsx"
-                           target="_blank" rel="noopener">
-                           View project
-                        </a>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <!-- CONTACT-->
-        <section id="contact" class="contact-section container">
-            <h2 class="section-title">Get in touch</h2>
-            <p class="section-desc">
-                Want to collaborate, ask about my work, or just say hi? Reach out:
-            </p>
-
-            <div class="contact-grid">
-                <div class="contact-card">
-                    <h3>Email</h3>
-                    <a href="mailto:Mickhaelastatke@gmail.com" class="contact-link">
-                        Mickhaelastatke@gmail.com
-                    </a>
-                </div>
-
-                <div class="contact-card">
-                    <h3>GitHub</h3>
-                    <a href="https://github.com/MickhaelAstatke"
-                       target="_blank" rel="noopener"
-                       class="contact-link">
-                        github.com/MickhaelAstatke
-                    </a>
-                </div>
-
-                <div class="contact-card">
-                    <h3>LinkedIn</h3>
-                    <a href="https://www.linkedin.com/in/your-linkedin-here"
-                       target="_blank" rel="noopener"
-                       class="contact-link">
-                        linkedin.com/in/your-linkedin-here
-                    </a>
                 </div>
             </div>
         </section>
@@ -205,18 +163,32 @@
 
     <!-- FOOTER -->
     <footer class="site-footer">
-        <div class="container footer-inner">
-            <p>© <span id="year"></span> Mickhael Astatke. All rights reserved.</p>
-
-            <button id="scrollTopBtn"
-                    class="scroll-top-btn"
-                    aria-label="Scroll to top">
-                ↑ Top
-            </button>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; <span id="currentYear"></span> Mickhael Astatke. All rights reserved.</p>
+                <p class="footer-tagline">Built with passion and dedication to web development</p>
+            </div>
         </div>
     </footer>
 
-    <!-- External JS -->
-    <script src="midterm/script.js"></script>
+    <!-- JavaScript for dynamic year -->
+    <script>
+        // Update copyright year automatically
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>

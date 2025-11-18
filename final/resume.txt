@@ -1,0 +1,9 @@
+This is a placeholder for Mickhael Astatke's resume. 
+
+Please replace this file with your actual resume PDF.
+
+You can:
+1. Export your resume from Google Docs as PDF
+2. Or create a PDF resume using any word processor
+
+Make sure the filename remains 'resume.pdf' or update the link in index.html accordingly.
