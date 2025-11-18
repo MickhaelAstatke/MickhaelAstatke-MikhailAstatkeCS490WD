@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mickhael Astatke | Web Dev Portfolio</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!--  HEADER / NAV   -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="branding">
+                <h1 class="logo">Mickhael Astatke</h1>
+                <p class="tagline"><span id="greeting"></span> I build clean, useful web things.</p>
+            </div>
+
+            <nav class="site-nav">
+                <ul>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li>
+                        <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+                            🌙
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header> 
+    <main>
+        <!--   HERO / INTRO   -->
+        <section class="hero container">
+            <div class="hero-text">
+                <h2>Front-End / Full-Stack Student Developer</h2>
+                <p>
+                    I'm a software engineering student working in HTML, CSS, and JS.
+                    Below are some of my course projects. This page is my live portfolio.
+                </p>
+                <a class="btn primary-btn" href="#projects">See my work ↓</a>
+            </div>
+        </section>
+
+        <!--  == PROJECTS  == -->
+        <section id="projects" class="projects-section container">
+            <h2 class="section-title">Projects & Assignments</h2>
+            <p class="section-desc">
+                These are projects from CS 490WD. Each one includes a short description and a link.
+            </p>
+
+            <div class="projects-grid">
+                <!-- PROJECT CARD: Parks & Rec -->
+                <article class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">Parks &amp; Rec Site</h3>
+                        <p class="project-desc">
+                            A responsive city Parks &amp; Rec info site with location cards and hours.
+                            Focus on layout, readability, and basic accessibility.
+                        </p>
+                    </div>
+                    <div class="project-links">
+                        <a class="btn small-btn"
+                           href="Week2Assignment/ParksAndRecHome.html"
+                           target="_blank" rel="noopener">
+                           View project
+                        </a>
+                    </div>
+                </article>
+
+                <!-- PROJECT CARD: Cozy Cafe -->
+                <article class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">Cozy Café Landing Page</h3>
+                        <p class="project-desc">
+                            A café home page with menu highlights, hero banner, and
+                            call-to-action button. Built with Flexbox.
+                        </p>
+                    </div>
+                    <div class="project-links">
+                        <a class="btn small-btn"
+                           href="Week2Assignment/CozyCafeHome.html"
+                           target="_blank" rel="noopener">
+                           View project
+                        </a>
+                    </div>
+                </article>
+
+                <!-- PROJECT CARD: Paris Travel Guide -->
+                <article class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">Paris Travel Guide</h3>
+                        <p class="project-desc">
+                            A mini travel guide layout using CSS Grid, card components,
+                            and hover effects for landmarks / food / tips.
+                        </p>
+                    </div>
+                    <div class="project-links">
+                        <a class="btn small-btn"
+                           href="Week2Assignment/TravelParisHome.html"
+                           target="_blank" rel="noopener">
+                           View project
+                        </a>
+                    </div>
+                </article>
+
+                <!-- PROJECT CARD: Tech Showcase -->
+                <article class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">Tech Product Showcase</h3>
+                        <p class="project-desc">
+                            Product cards with specs and pricing. Practiced semantic HTML,
+                            consistent spacing, and reusable card components.
+                        </p>
+                    </div>
+                    <div class="project-links">
+                        <a class="btn small-btn"
+                           href="Week2Assignment/TechProductsHome.html"
+                           target="_blank" rel="noopener">
+                           View project
+                        </a>
+                    </div>
+                </article>
+
+                <!-- PROJECT CARD: Shopping List -->
+                <article class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">Shopping List App</h3>
+                        <p class="project-desc">
+                            Simple interactive list to track items.
+                            Focus on basic JS logic and DOM updates.
+                        </p>
+                    </div>
+                    <div class="project-links">
+                        <a class="btn small-btn"
+                           href="Week2Assignment/ShoppingListHome.html"
+                           target="_blank" rel="noopener">
+                           View project
+                        </a>
+                    </div>
+                </article>
+
+
+                <article class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">Movie Gallery Showcase</h3>
+                        <p class="project-desc">
+                         TEST
+                        </p>
+                    </div>
+                    <div class="project-links">
+                        <a class="btn small-btn"
+                           href="week11/src/App.jsx"
+                           target="_blank" rel="noopener">
+                           View project
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- CONTACT-->
+        <section id="contact" class="contact-section container">
+            <h2 class="section-title">Get in touch</h2>
+            <p class="section-desc">
+                Want to collaborate, ask about my work, or just say hi? Reach out:
+            </p>
+
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h3>Email</h3>
+                    <a href="mailto:Mickhaelastatke@gmail.com" class="contact-link">
+                        Mickhaelastatke@gmail.com
+                    </a>
+                </div>
+
+                <div class="contact-card">
+                    <h3>GitHub</h3>
+                    <a href="https://github.com/MickhaelAstatke"
+                       target="_blank" rel="noopener"
+                       class="contact-link">
+                        github.com/MickhaelAstatke
+                    </a>
+                </div>
+
+                <div class="contact-card">
+                    <h3>LinkedIn</h3>
+                    <a href="https://www.linkedin.com/in/your-linkedin-here"
+                       target="_blank" rel="noopener"
+                       class="contact-link">
+                        linkedin.com/in/your-linkedin-here
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© <span id="year"></span> Mickhael Astatke. All rights reserved.</p>
+
+            <button id="scrollTopBtn"
+                    class="scroll-top-btn"
+                    aria-label="Scroll to top">
+                ↑ Top
+            </button>
+        </div>
+    </footer>
+
+    <!-- External JS -->
+    <script src="script.js"></script>
+</body>
+</html>
