@@ -1,222 +1,268 @@
 <!DOCTYPE html>
- <html lang="en">
- <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-     <title>Mickhael Astatke | Professional Portfolio</title>
- 
-    <!-- Google Fonts --> 
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mickhael Astatke | Professional Portfolio</title>
 
-    <!-- External CSS -->
-    <link rel="stylesheet" href="final/style.css">
-     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="final/portfolio.css">
- </head>
- <body>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="final/style.css">
+  <link rel="stylesheet" href="final/portfolio.css">
+</head>
+<body>
 
 <header class="site-header">
-    <div class="container">
-        <nav class="main-nav">
-            <div class="logo">
-                <h1>Mickhael Astatke</h1>
-            </div>
+  <div class="container nav-wrapper">
+    <a class="brand" href="#hero">
+      <span class="brand__name">Mickhael Astatke</span>
+      <span class="brand__role">Software Engineer & UX-minded Builder</span>
+    </a>
 
-            <div class="container nav-wrapper">
-                <a class="brand" href="#hero">
-                    <span class="brand__name">Mickhael Astatke</span>
-                    <span class="brand__role">Software Engineer &amp; UX-minded Builder</span>
-                </a>
-                <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-                    Menu
-                </button>
-                <nav class="site-nav" aria-label="Primary">
-                    <ul class="nav-links">
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#hero">Home</a></li>
-                        <li><a href="#bio">Professional Bio</a></li>
-                        <li><a href="#image">Professional Image</a></li>
-                        <li><a href="#resume">Resume</a></li>
-                        <li><a href="#education">Education</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li><a href="final/resume.pdf" target="_blank" class="resume-link">Resume</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </nav>
-    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">Menu</button>
+
+    <nav class="site-nav">
+      <ul class="nav-links" id="navMenu">
+        <li><a href="#bio">Bio</a></li>
+        <li><a href="#image">Image</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="themeToggle">🌙</button></li>
+      </ul>
+    </nav>
+  </div>
 </header>
- 
-     <main id="hero" class="hero">
-         <div class="container hero-grid">
-             <div class="hero-text">
-                 <p class="eyebrow">Portfolio &amp; Career Snapshot</p>
-                 <h1>Turning user problems into thoughtful digital experiences.</h1>
-                 <p>
-                    Test
-                 </p>
-                 <div class="hero-cta">
-                     <a class="btn primary" href="#resume">View Resume</a>
-                     <a class="btn secondary" href="#contact">Start a conversation</a>
-                 </div>
-                 <ul class="highlight-list" aria-label="Professional highlights">
-                     <li><strong>5 </strong> Test</li>
-                     <li><strong>2</strong> Test</li>
-                     <li><strong>6</strong> Test</li>
-                 </ul>
-             </div>
-             <div class="hero-panel">
-                 <article class="status-card">
-                     <h2>Currently Building</h2>
-                     <p>Test.</p>
-                     <dl class="status-meta">
-                         <div>
-                             <dt>Focus</dt>
-                             <dd>RTest.</dd>
-                         </div>
-                         <div>
-                             <dt>Guiding Principles</dt>
-                             <dd>Test.</dd>
-                         </div>
-                     </dl>
-                 </article>
-             </div>
-         </div>
-     </main>
- 
-     <section id="bio" class="section bio-section">
-         <div class="container section-grid">
-             <div>
-                 <p class="eyebrow">Professional Bio</p>
-                 <h2>Championing accessible web products.</h2>
-                 <p>
-                   Test.
-                 </p>
-                 <p>
-                    Test.
-                 </p>
-             </div>
-             <div class="bio-card">
-                 <h3>Ways I add value</h3>
-                 <ul>
-                     <li>Test</li>
-                     <li>Test</li>
-                     <li>Test</li>
-                     <li>Test</li>
-                 </ul>
-             </div>
-         </div>
-     </section>
- 
-     <section id="image" class="section image-section">
-         <div class="container image-grid">
-             <figure>
-                 <img src="sd" alt="Mickhael collaborating with teammates at a laptop" loading="lazy">
-                 <figcaption>Test</figcaption>
-             </figure>
-             <article class="image-copy">
-                 <h2>Professional Image</h2>
-                 <p>
-                  Test
-                 </p>
-                 <p>
-                  Test
-                 </p>
-             </article>
-         </div>
-     </section>
- 
-     <section id="resume" class="section resume-section">
-         <div class="container section-grid">
-             <div>
-                 <p class="eyebrow">Resume</p>
-                 <h2>Download the latest version of my resume.</h2>
-                 <p>
-                    Test.
-                 </p>
-                 <a class="btn primary" href="" target="_blank" rel="noopener">
-                     View Resume in Google Docs
-                 </a>
-             </div>
-             <div class="resume-card" aria-label="Resume preview">
-                 <h3>Snapshot</h3>
-                 <ul>
-                     <li>Test</li>
-                     <li>Test</li>
-                     <li>Test</li>
-                 </ul>
-             </div>
-         </div>
-     </section>
- 
-     <section id="education" class="section education-section">
-         <div class="container">
-             <p class="eyebrow">Education Background</p>
-             <h2>BS in Computer Science, University of Missouri - Kansas City</h2>
-             <p class="section-lede">
-                Test.        
-             </p>
-             <div class="education-grid">
-                 <article class="education-card">
-                     <h3>Core Highlights</h3>
-                     <p>
-                        Test.
-                     </p>
-                     <ul class="course-list">
-                         <li>Software Engineering &amp; DevOps</li>
-                         <li>Advanced Web Development</li>
-                     </ul>
-                 </article>
-                 <article class="education-card">
-                     <h3>Recent Projects</h3>
-                     <ul class="project-list">
-                         <li><strong>Test:</strong> Test</li>
-                         <li><strong>Test:</strong> Test</li>
-                         <li><strong>Test:</strong> Test</li>
-                     </ul>
-                 </article>
-             </div>
-         </div>
-     </section>
- 
-     <section id="contact" class="section contact-section">
-         <div class="container">
-             <p class="eyebrow">Contact</p>
-             <h2>Let's collaborate</h2>
-             <p class="section-lede">
-                Test
-             </p>
-             <div class="contact-grid">
-                 <article class="contact-card">
-                     <h3>Email</h3>
-                     <a href="mailto:mickhaelastatke@gmail.com">mickhaelastatke@gmail.com</a>
-                 </article>
-                 <article class="contact-card">
-                     <h3>LinkedIn</h3>
-                     <a href="https://www.linkedin.com/in/mickhael-astatke" target="_blank" rel="noopener">linkedin.com/in/mickhael-astatke</a>
-                 </article>
-                 <article class="contact-card">
-                     <h3>GitHub</h3>
-                     <a href="https://github.com/MickhaelAstatke" target="_blank" rel="noopener">github.com/MickhaelAstatke</a>
-                 </article>
-             </div>
-         </div>
-     </section>
- 
-     <footer class="site-footer">
-         <div class="container footer-grid">
-             <p>© <span id="year"></span> Mickhael Astatke. Crafted with intention.</p>
-             <a class="back-to-top" href="#hero">Back to top ↑</a>
-         </div>
-     </footer>
- 
-     <script src="final/portfolio.js"></script>
- </body>
+
+<main id="hero" class="hero">
+  <div class="container hero-grid">
+
+    <div class="hero-text">
+      <p class="eyebrow">Portfolio & Career Snapshot</p>
+      <h1><span id="greeting"></span></h1>
+      <p>I turn real-world problems into clean, user-friendly solutions using modern web technologies.</p>
+
+      <div class="hero-cta">
+        <a class="btn primary" href="#resume">View Resume</a>
+        <a class="btn secondary" href="#contact">Start a conversation</a>
+      </div>
+
+      <ul class="highlight-list">
+        <li>Full-Stack Development</li>
+        <li>Cybersecurity & Forensics</li>
+        <li>UX-Focused Design</li>
+      </ul>
+    </div>
+
+    <div class="hero-panel">
+      <article class="status-card">
+        <h2>Currently Building</h2>
+        <p>Modern web & mobile apps using React, Node, and Firebase.</p>
+        <dl class="status-meta">
+          <div>
+            <dt>Focus</dt>
+            <dd>Web Performance & Accessibility</dd>
+          </div>
+          <div>
+            <dt>Guiding Principles</dt>
+            <dd>Clarity, Efficiency, Security</dd>
+          </div>
+        </dl>
+      </article>
+    </div>
+
+  </div>
+</main>
+
+<!-- BIO -->
+<section id="bio" class="section">
+  <div class="container section-grid">
+    <div>
+      <p class="eyebrow">Professional Bio</p>
+      <h2>Building thoughtful, accessible digital products.</h2>
+      <p>
+        I am a Computer Science student and software developer focused on full-stack web applications,
+        cybersecurity practices, and user-centered design. I enjoy solving complex problems through
+        clean, scalable code.
+      </p>
+    </div>
+
+    <div class="bio-card">
+      <h3>Ways I Add Value</h3>
+      <ul>
+        <li>Front-end UI & UX design</li>
+        <li>Full-stack API development</li>
+        <li>Secure coding practices</li>
+        <li>Team collaboration & leadership</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- IMAGE -->
+<section id="image" class="section image-section">
+  <div class="container image-grid">
+    <figure>
+      <img src="final/images/profile.jpg" alt="Professional photo of Mickhael Astatke">
+      <figcaption>Professional Headshot</figcaption>
+    </figure>
+
+    <article class="image-copy">
+      <h2>Professional Image</h2>
+      <p>
+        I value professionalism, integrity, and communication in every project and team environment.
+      </p>
+    </article>
+  </div>
+</section>
+
+<!-- RESUME -->
+<section id="resume" class="section resume-section">
+  <div class="container section-grid">
+
+    <div>
+      <p class="eyebrow">Resume</p>
+      <h2>Download my latest resume</h2>
+      <p>View or download my professional resume as a PDF.</p>
+      <a class="btn primary" href="final/resume.pdf" target="_blank">View Resume PDF</a>
+    </div>
+
+    <div class="resume-card">
+      <h3>Snapshot</h3>
+      <ul>
+        <li>Software Engineering Student</li>
+        <li>Full-Stack Web Developer</li>
+        <li>Cybersecurity Lab Experience</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="section education-section">
+  <div class="container">
+    <p class="eyebrow">Education</p>
+    <h2>BS in Computer Science – UMKC</h2>
+    <p class="section-lede">
+      Coursework focused on software engineering, cybersecurity, and web development.
+    </p>
+
+    <div class="education-grid">
+      <article class="education-card">
+        <h3>Core Courses</h3>
+        <ul class="course-list">
+          <li>Web Development</li>
+          <li>Digital Forensics</li>
+          <li>Discrete Mathematics</li>
+          <li>Computer Architecture</li>
+        </ul>
+      </article>
+
+      <article class="education-card">
+        <h3>Recent Projects</h3>
+        <ul class="project-list">
+          <li><strong>Portfolio Website:</strong> Full responsive web portfolio</li>
+          <li><strong>Shopping List App:</strong> JavaScript DOM app</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+  <div class="container">
+    <p class="eyebrow">Skills</p>
+    <h2>Technical Skills</h2>
+    <ul class="course-list">
+      <li>HTML, CSS, JavaScript</li>
+      <li>React, Flutter</li>
+      <li>Node.js, MySQL, Firebase</li>
+      <li>Git, GitHub</li>
+      <li>Cybersecurity & Forensics</li>
+    </ul>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <div class="container">
+    <p class="eyebrow">Projects</p>
+    <h2>Selected Work</h2>
+    <ul class="project-list">
+      <li><strong>AmharicFlow:</strong> React Native language learning app</li>
+      <li><strong>BookProject:</strong> Node + MySQL bookstore app</li>
+      <li><strong>Portfolio Website:</strong> This responsive site</li>
+    </ul>
+
+    <a class="btn secondary" href="projects.html">View Full Project Gallery</a>
+  </div>
+</section>
+
+<!-- RESEARCH -->
+<section id="research" class="section">
+  <div class="container">
+    <p class="eyebrow">Research</p>
+    <h2>Research Interests</h2>
+    <p>
+      My interests include cybersecurity analysis, ethical computing, and digital forensics.
+    </p>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="section">
+  <div class="container">
+    <p class="eyebrow">Work Experience</p>
+    <h2>MTW Solutions – Software Developer</h2>
+    <p>
+      Developed government web systems, created automation tools in C#, and contributed to
+      real-world production applications.
+    </p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section contact-section">
+  <div class="container">
+    <p class="eyebrow">Contact</p>
+    <h2>Let’s Connect</h2>
+
+    <div class="contact-grid">
+      <article class="contact-card">
+        <h3>Email</h3>
+        <a href="mailto:mickhaelastatke@gmail.com">mickhaelastatke@gmail.com</a>
+      </article>
+
+      <article class="contact-card">
+        <h3>LinkedIn</h3>
+        <a href="https://www.linkedin.com/in/mickhael-astatke" target="_blank">linkedin.com/in/mickhael-astatke</a>
+      </article>
+
+      <article class="contact-card">
+        <h3>GitHub</h3>
+        <a href="https://github.com/MickhaelAstatke" target="_blank">github.com/MickhaelAstatke</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <p>© <span id="year"></span> Mickhael Astatke. Crafted with intention.</p>
+    <button id="scrollTopBtn">↑ Top</button>
+  </div>
+</footer>
+
+<script src="final/script.js"></script>
+</body>
 </html>
-
-            
- 
-
