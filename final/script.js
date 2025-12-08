@@ -1,4 +1,4 @@
-// ✅ Dynamic Greeting
+// Dynamic Greeting
 (function setGreeting() {
   const greetingEl = document.getElementById("greeting");
   const hour = new Date().getHours();
@@ -11,13 +11,13 @@
   if (greetingEl) greetingEl.textContent = message;
 })();
 
-// ✅ Auto Year Footer
+// Auto Year Footer
 (function setYear() {
   const yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 })();
 
-// ✅ Dark Mode Toggle (FIXED)
+// Dark Mode Toggle (FIXED)
 (function initThemeToggle() {
   const toggleBtn = document.getElementById("themeToggle");
   const savedTheme = localStorage.getItem("theme");
@@ -40,21 +40,23 @@
   }
 })();
 
-// ✅ Scroll To Top Button
+// Scroll To Top Button
 (function initScrollToTop() {
   const scrollBtn = document.getElementById("scrollTopBtn");
 
+  // Show button after scrolling 200px
   window.addEventListener("scroll", () => {
-    if (!scrollBtn) return;
-    scrollBtn.style.display = window.scrollY > 200 ? "inline-block" : "none";
+    if (window.scrollY > 200) {
+      scrollBtn.style.display = "block";
+    } else {
+      scrollBtn.style.display = "none";
+    }
   });
-
-  if (scrollBtn) {
-    scrollBtn.addEventListener("click", () => {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
+\
+  scrollBtn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
     });
-  }
+  });
 })();
