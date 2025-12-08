@@ -469,3 +469,14 @@ body.dark-theme a {
   cursor: pointer;
 }
 
+body.dark-theme #greeting {
+  color: #f9fafb !important;   /* bright white */
+  opacity: 1 !important;
+}
+
+/* Also fix the hero paragraph under it */
+body.dark-theme .hero-text p {
+  color: #e5e7eb !important;
+}
+
+
