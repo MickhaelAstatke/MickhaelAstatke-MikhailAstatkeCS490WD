@@ -30,20 +30,20 @@
   const toggleBtn = document.getElementById("themeToggle");
   const savedTheme = localStorage.getItem("theme");
 
-  if (savedTheme === "light") {
-    document.body.classList.add("light-theme");
-    if (toggleBtn) toggleBtn.textContent = "🌙";
-  } else {
+  if (savedTheme === "dark") {
+    document.body.classList.add("dark-theme");
     if (toggleBtn) toggleBtn.textContent = "☀️";
+  } else {
+    if (toggleBtn) toggleBtn.textContent = "🌙";
   }
 
   if (toggleBtn) {
     toggleBtn.addEventListener("click", () => {
-      document.body.classList.toggle("light-theme");
-      const lightNow = document.body.classList.contains("light-theme");
+      document.body.classList.toggle("dark-theme");
+      const isDark = document.body.classList.contains("dark-theme");
 
-      toggleBtn.textContent = lightNow ? "🌙" : "☀️";
-      localStorage.setItem("theme", lightNow ? "light" : "dark");
+      toggleBtn.textContent = isDark ? "☀️" : "🌙";
+      localStorage.setItem("theme", isDark ? "dark" : "light");
     });
   }
 })();
