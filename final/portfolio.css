@@ -416,3 +416,13 @@ img {
         justify-content: center;
     }
 }
+
+#greeting {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: none; /* removes all-caps if desired */
+  margin-bottom: 1rem;
+  display: block;
+}
+
